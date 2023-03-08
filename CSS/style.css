@@ -1,10 +1,33 @@
-{
-    padding: 0;
-    margin: 0;
-    box-sizing: boder-box;
-    font-family: sans-serif;
 
+.nav-bar{
+    background-color: black;
+    padding: 15px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: sticky;
 
 }
+.nav-menu{
+    list-style-type: none;
 
-.nav
+}
+.nav-menu-item{
+    display: inline;
+    padding: 10px;
+}
+.nav-menu-item >a{
+    display: inline-block;
+    text-decoration: none;
+    color: gray;
+    padding: 8px 25px;
+    margin: 0 5px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    transition: all .7s ease;
+}
+.nav-menu-item :hover{
+    background-color: orange;
+    box-shadow: 0 0 8px orange;
+
+}
