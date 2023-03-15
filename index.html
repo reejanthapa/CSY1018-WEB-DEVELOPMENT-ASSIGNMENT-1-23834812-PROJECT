@@ -1,32 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <title> personal portfolio website</title>
         <link rel="stylesheet" href="./CSS/style.css">
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <div class="menu">
-            <nav class="nav-bar">
-            
-              <ul>
-              <li class="nav-menu-item active"><a href="./index.html">HOME</a></li>
-              <li class="nav-menu-item"> <a href="./portfolio.html">PORTFOLIO</a></li>
-              <li class="nav-menu-item"> <a href="./contact.html">CONTACT</a></li>
-              <li class="nav-menu-item"> <a href="./workexperience.html">WORKEXPERIENCE</a></li>
-              <li class="nav-menu-item"> <a href="./sitereport.html">SITEREPORT</a></li>  
-              </ul>  
-            </nav>
-           <div class="text-box">
+        <header>
+        <nav class="nav-bar">
+           <a href="#" class="logo">Motors</a> 
+           <div class="nav-menu">
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./portfolio.html">PORTFOLIO</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+                <li><a href="./workexperience.html">WORK EXPERIENCE</a></li>
+                <li><a href="./sitereport.html">SITE REPORT</a></li>
+            </ul>
+           </div>
+           <img src="./img/menu.png" alt="menu hamburger" class="hamburger">
+        </nav>
+            <div class="text-box">
                 <h2> MARVEL AUTOS</h2>
                 <h4>"Unleash Your Inner Speed Demon"</h4>
-            <div class="line">
+                <div class="line">
                 <a href="">Connect With Us</a>
                 <a href="">Explore More</a>
+                </div>
             </div>
-            </div>
-      </div>
+
+
+        </header>
+        
     </body>
+        <script>
+        const menuHamburger = document.querySelector(".hamburger")
+        const navMenu = document.querySelector(".nav-menu")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navMenu.classList.toggle('mobile-menu')
+        })
+    </script>
 </html>
 
     

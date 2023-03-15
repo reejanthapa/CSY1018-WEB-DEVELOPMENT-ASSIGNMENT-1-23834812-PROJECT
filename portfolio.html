@@ -4,34 +4,45 @@
         <title> personal portfolio website</title>
         <link rel="stylesheet" href="./CSS/style.css">
     </head>
-    <body style="background-color: black;">
+    <body style="background: linear-gradient(90deg, black 0%, rgb(168, 50, 50) 100%);">
             <nav class="nav-bar">
-            
-              <ul>
-              <li class="nav-menu-item active"><a href="./index.html">HOME</a></li>
-              <li class="nav-menu-item"> <a href="./portfolio.html">PORTFOLIO</a></li>
-              <li class="nav-menu-item"> <a href="./contact.html">CONTACT</a></li>
-              <li class="nav-menu-item"> <a href="./workexperience.html">WORKEXPERIENCE</a></li>
-              <li class="nav-menu-item"> <a href="./sitereport.html">SITEREPORT</a></li>  
-              </ul>  
+               <a href="#" class="logo">Motors</a> 
+               <div class="nav-menu">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                    <li><a href="./workexperience.html">WORK EXPERIENCE</a></li>
+                    <li><a href="./sitereport.html">SITE REPORT</a></li>
+                </ul>
+               </div>
+               <img src="./img/menu.png" alt="menu hamburger" class="hamburger">
             </nav>
-        <header>
-           <h1>Unveiling Our Exquisite Collection of High-End Cars</h1>
-        </header>
-        <hr/>
-        <section id="Portfolio">
-            <div class="box">
-             <img src="./IMG/3.avif">
-             <img src="./IMG/5.jpg">
-             <img src="./IMG/7.jpg">
-             <img src="./IMG/6.jpg">
-             <img src="./IMG/9.jpg">
-             <img src="./IMG/10.jpg">
-             <img src="./IMG/11.jpg">
-             <img src="./IMG/12.jpg">
-            </div>
-        </section>
+            
+            <section id="portfolio">
+                <h1>Photo gallery</h1>
+                <div class="box">
+                    <img src="./img/3.avif">
+                    <img src="./img/4.avif">
+                    <img src="./img/6.jpg">
+                    <img src="./img/10.jpg">
+                    <img src="./img/7.jpg">
+                    <img src="./img/10.jpg">
+                    <img src="./img/11.jpg">
+                    <img src="./img/12.jpg">
+                    
+                </div>
+            </section>
+
     </body>
+    <script>
+        const menuHamburger = document.querySelector(".hamburger")
+        const navMenu = document.querySelector(".nav-menu")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navMenu.classList.toggle('mobile-menu')
+        })
+    </script>
 </html>
 
     
