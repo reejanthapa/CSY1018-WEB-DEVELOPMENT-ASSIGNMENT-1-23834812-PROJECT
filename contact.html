@@ -17,7 +17,7 @@
              </ul>
             </div>
             <img src="./img/menu.png" alt="menu hamburger" class="hamburger">
-        </nav>
+         </nav>
 
         <div class="photo">
          <div class="container">
@@ -72,6 +72,14 @@
 
         
     </body>
+    <script>
+        const menuHamburger = document.querySelector(".hamburger")
+        const navMenu = document.querySelector(".nav-menu")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navMenu.classList.toggle('mobile-menu')
+        })
+    </script>
 </html>
 
     

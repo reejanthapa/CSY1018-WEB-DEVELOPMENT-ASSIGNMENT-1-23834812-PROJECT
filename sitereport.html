@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <title> personal portfolio website</title>
         <link rel="stylesheet" href="./CSS/style.css">
@@ -20,9 +20,9 @@
      </nav>
 
      <section class="sitereport">
-      <div id="site">
+      <div class="site">
         <div class="report">
-          <h6>REPORT</h6>
+          <h6>"REPORT"</h6>
           <p>Learning the basics of web development, coding, and design can be challenging but rewarding.The first step for a beginner like me was to pay attention in the class and later research and watch some youtube tutotrials. It seemed to be very difficult to complete this process in the beginning but I pushed through. The basic design of the website I was going to make was very clear in my head but the coding and debugging process took quit a long time. Although the design of the website was clear in my head there were many problems in the execution of the visual. The most challenging part of the website making was making the page responsive and adding the hamburger icon. I remember scratching my head and almost giving up after countless tries but at the end I was able to pull through. 
             This module CSY1018 which is web development has been one of the most fruitful subject in my first semester. This module doesn’t require bookish trend but more of a practical approach and practical learning which is made the module even more exciting to learn. The module is pretty moderate and we only learned about html and css but that was enough for a first timer to cry in frustration. The module instructor is also easy to communicate and the learning environment in the presence of the instructor is also very nice.
             This report is about a website that sells car. I personally am very interested in automobile especially sports-cars which lead to the design and the concept of the website. Black color represents luxury and this website is retailing high-end sport cars which also screams luxury also black color is very aesthetic and gives the website edgy and classy looks. It also consists of some red and orange which really compliments the black color. 
@@ -30,9 +30,23 @@
             </p>
         </div>
       </div>
+      <div class="images">
+        <img src="./img/homepage.png">
+        <img src="./img/portfoliopage.png">
+        <img src="./img/contactpage.png">
+        <img src="./img/work.png">
+      </div>
      </section>
 
    </body>
+   <script>
+    const menuHamburger = document.querySelector(".hamburger")
+    const navMenu = document.querySelector(".nav-menu")
+
+    menuHamburger.addEventListener('click',()=>{
+    navMenu.classList.toggle('mobile-menu')
+    })
+</script>
 </html>
 
     

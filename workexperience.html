@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <title> personal portfolio website</title>
         <link rel="stylesheet" href="./CSS/style.css">
@@ -62,4 +62,12 @@
               </div>
 
     </body>
+    <script>
+      const menuHamburger = document.querySelector(".hamburger")
+      const navMenu = document.querySelector(".nav-menu")
+
+      menuHamburger.addEventListener('click',()=>{
+      navMenu.classList.toggle('mobile-menu')
+      })
+  </script>
 </html>
