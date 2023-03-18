@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title> personal portfolio website</title>
         <link rel="stylesheet" href="./CSS/style.css">
+        <script>
+            const menuHamburger = document.querySelector(".hamburger")
+            const navMenu = document.querySelector(".nav-menu")
+     
+            menuHamburger.addEventListener('click',()=>{
+            navMenu.classList.toggle('mobile-menu')
+            })
+        </script>
     </head>
     <body style="background: linear-gradient(90deg, black 0%, rgb(168, 50, 50) 100%);">
             <nav class="nav-bar">
@@ -21,28 +31,22 @@
             
             <section id="portfolio">
                 <h1>Photo gallery</h1>
+                <div class="collection">
                 <div class="box">
-                    <img src="./img/3.avif">
-                    <img src="./img/4.avif">
-                    <img src="./img/6.jpg">
-                    <img src="./img/10.jpg">
-                    <img src="./img/7.jpg">
-                    <img src="./img/10.jpg">
-                    <img src="./img/11.jpg">
-                    <img src="./img/12.jpg">
+                    <img src="./img/one.avif" alt="https://unsplash.com/photos/1MsGQCOeFRk">
+                    <img src="./img/two.avif" alt="https://unsplash.com/photos/mOrmxn_Rn40">
+                    <img src="./img/three.avif" alt="https://unsplash.com/photos/ndrjunfmqwY">
+                    <img src="./img/four.avif" alt="https://unsplash.com/photos/R5xwp8lmFGI">
+                    <img src="./img/five.avif" alt="https://unsplash.com/photos/hM97EMh_564">
+                    <img src="./img/six.avif" alt="https://unsplash.com/photos/QUfxuCqdpH0">
+                    <img src="./img/seven.jpg" alt="https://www.lifestyleasia.com/ind/tech/auto/enter-the-hennessey-venom-f5-the-fastest-car-on-earth-that-zips-at-311-mph/">
+                    <img src="./img/eight.jpg" alt="https://www.venomgt.com/tag/venom-gt/">
                     
+                </div>
                 </div>
             </section>
 
     </body>
-    <script>
-        const menuHamburger = document.querySelector(".hamburger")
-        const navMenu = document.querySelector(".nav-menu")
- 
-        menuHamburger.addEventListener('click',()=>{
-        navMenu.classList.toggle('mobile-menu')
-        })
-    </script>
 </html>
 
     

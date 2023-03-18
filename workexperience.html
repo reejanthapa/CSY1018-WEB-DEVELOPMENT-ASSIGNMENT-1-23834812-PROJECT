@@ -1,8 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title> personal portfolio website</title>
         <link rel="stylesheet" href="./CSS/style.css">
+        <script>
+            const menuHamburger = document.querySelector(".hamburger")
+            const navMenu = document.querySelector(".nav-menu")
+     
+            menuHamburger.addEventListener('click',()=>{
+            navMenu.classList.toggle('mobile-menu')
+            })
+        </script>
     </head>
     <body style="background: linear-gradient(90deg, black 0%, rgb(168, 50, 50) 100%);">
       <nav class="nav-bar">
@@ -59,15 +69,7 @@
                     <li>Answered customer questions about cars, financing and purchase process </li>
                   </ul>
                 </div>
-              </div>
+            </div>
 
     </body>
-    <script>
-      const menuHamburger = document.querySelector(".hamburger")
-      const navMenu = document.querySelector(".nav-menu")
-
-      menuHamburger.addEventListener('click',()=>{
-      navMenu.classList.toggle('mobile-menu')
-      })
-  </script>
 </html>

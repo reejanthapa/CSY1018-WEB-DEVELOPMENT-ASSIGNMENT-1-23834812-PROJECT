@@ -1,8 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title> personal portfolio website</title>
         <link rel="stylesheet" href="./CSS/style.css">
+        <script>
+            const menuHamburger = document.querySelector(".hamburger")
+            const navMenu = document.querySelector(".nav-menu")
+     
+            menuHamburger.addEventListener('click',()=>{
+            navMenu.classList.toggle('mobile-menu')
+            })
+        </script>
     </head>
     <body style="background: linear-gradient(90deg, black 0%, rgb(168, 50, 50) 100%);">
       <nav class="nav-bar">
@@ -19,7 +29,7 @@
         <img src="./img/menu.png" alt="menu hamburger" class="hamburger">
      </nav>
 
-     <section class="sitereport">
+    <section class="sitereport">
       <div class="site">
         <div class="report">
           <h6>"REPORT"</h6>
@@ -30,23 +40,47 @@
             </p>
         </div>
       </div>
-      <div class="images">
-        <img src="./img/homepage.png">
-        <img src="./img/portfoliopage.png">
-        <img src="./img/contactpage.png">
-        <img src="./img/work.png">
+      <div class="flex-image">
+        <div class="images">
+          <img src="./img/homepage.png" alt="">
+          <div class="characters">First home page</div>
+        </div>
+        <div class="images">
+          <img src="./img/html.validate.png" alt="">
+          <div class="characters">Home validate page</div>
+        </div>
+        <div class="images">
+         <img src="./img/portfoliopage.png" alt="">
+         <div class="characters">Portfolio page</div>
+        </div>
+        <div class="images">
+          <img src="./img/portfolio validate.png" alt="">
+          <div class="characters">portfolio validation page</div>
+         </div>
+        <div class="images">
+          <img src="./img/contactpage.png" alt="">
+          <div class="characters"> Contact page</div>
+        </div>
+        <div class="images">
+          <img src="./img/contactvalidate.png" alt="">
+          <div class="characters"> Contact validate page</div>
+        </div>
+        <div class="images">
+          <img src="./img/work.png" alt="">
+          <div class="characters"> Work experience page</div>
+        </div>
+        <div class="images">
+          <img src="./img/workvalidate.png" alt="">
+          <div class="characters"> Work experience validate page</div>
+        </div>
+        <div class="images">
+          <img src="./img/sitevalidate.png" alt="">
+          <div class="characters"> Site report validate page</div>
+        </div>
       </div>
      </section>
 
    </body>
-   <script>
-    const menuHamburger = document.querySelector(".hamburger")
-    const navMenu = document.querySelector(".nav-menu")
-
-    menuHamburger.addEventListener('click',()=>{
-    navMenu.classList.toggle('mobile-menu')
-    })
-</script>
 </html>
 
     
